@@ -28,5 +28,6 @@ sudo apt-get update
      sudo ./configure
      sudo make
      sudo make install
+     systemctl restart nagios
      sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
      
