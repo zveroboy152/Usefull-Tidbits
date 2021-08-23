@@ -19,4 +19,14 @@ sudo apt-get update
      sudo ufw allow Apache
      sudo ufw reload
      systemctl start nagios
+     sudo apt-get install -y autoconf gcc libc6 libmcrypt-dev make libssl-dev wget bc gawk dc build-essential snmp libnet-snmp-perl gettext
+     cd /tmp
+     wget --no-check-certificate -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.2.1.tar.gz
+     tar zxf nagios-plugins.tar.gz
+     cd /tmp/nagios-plugins-release-2.2.1/
+     sudo ./tools/setup
+     sudo ./configure
+     sudo make
+     sudo make install
      sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+     
