@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo apt update -y
 cd /tmp
 wget https://github.com/prometheus/prometheus/releases/download/v2.27.1/prometheus-2.27.1.linux-amd64.tar.gz
