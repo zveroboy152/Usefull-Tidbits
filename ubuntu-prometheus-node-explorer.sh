@@ -6,6 +6,7 @@ cd /tmp
       
       sudo nano /etc/systemd/system/node_exporter.service
 
+[Unit]
 Description=Node Exporter
 
 After=network.target
