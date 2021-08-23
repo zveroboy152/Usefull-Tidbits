@@ -26,4 +26,4 @@ ExecStart=/usr/local/bin/node_exporter
 WantedBy=multi-user.target
       
       
-      systemctl start node_exporter
+      sudo systemctl start node_exporter
