@@ -1,1 +1,1 @@
- msiexec /i C:\Users\Administrator\Downloads\windows_exporter.msi  ENABLED_COLLECTORS="ad,dns,dhcp,cpu,iis,logon,memory,process,tcp,time,vmware"
+ msiexec /i \\192.168.1.120\ZBC-Public\windows_exporter.msi  ENABLED_COLLECTORS="ad,dns,dhcp,cpu,iis,logon,memory,process,tcp,time,vmware"
